@@ -1,4 +1,2 @@
-deu errado meu primeiro repositório
-
-
-já faço e altero aqui para ter tudo pronto
+meu primeiro repositório:
+https://github.com/dionesmichele/versionamento-aula-mp
