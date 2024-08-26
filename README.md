@@ -21,7 +21,7 @@ identifica usuário que esta logado. tradução: "quem sou eu"
 ```sh
 $ whoami
 ```
-
+batatai
 mostra o caminho da pasta atual no seu usuário, ex: C:/Users/tabita/documentos/dev. tradução: print working directory - mostre o diretório de trabalho
 ```sh
 $ pwd  
