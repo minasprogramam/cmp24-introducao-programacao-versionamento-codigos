@@ -69,7 +69,7 @@ deleta uma pasta. tradução: remove directory - remova diretório
 $ rmdir nome-da-pasta
 ```
 
-____
+_____________
 
 ### Versionamento
 
@@ -104,7 +104,6 @@ configura usuário do git local
 ```sh
 $ git config --global user.name "Tabita"
 $ git config --global user.email "tabita@email.com"
-
 ```
 
 listar todas as configurações do git: 
@@ -143,7 +142,6 @@ $ git commit -m "Frase curta explicando a modificação realizada"
 verificar diferenças entre arquivos:
 ```sh
 $ git diff arquivo.txt
-
 ```
 
 verificar diferenças na área de "preparação":
@@ -190,7 +188,49 @@ deletar branch remota:
 $ git push origin --delete nome-da-branch
 ```
 
-____
+clonar repositório:
+```sh
+$ git clone url-do-repositorio
+```
+atualizar repositório local com informações do repositório do clone:
+```sh
+$ git pull origin nome-da-branch
+```
+
+conectar repositório externo a pasta local:
+```sh
+$ git remote add origin url-do-repositorio
+```
+editar repositorio externo conectado a pasta local:
+```sh
+$ git remote set-url origin url-do-repositorio
+```
+
+adicionar repositorio do fork original como atualizador:
+```sh
+$ git remote add upstream url-do-repositorio
+```
+editar repositorio do fork original como atualizador:
+```sh
+$ git remote set-url upstream url-do-repositorio
+```
+atualizar repositório local com informações do repositório do fork:
+```sh
+$ git pull upstream nome-da-branch
+```
+
+enviar alterações para repositório externo:
+```sh
+$ git push origin nome-da-branch
+```
+
+**Fork** -> é uma cópia de um repositório atráves do Github, criando um reposiório clone no nosso perfil que estará atrelado aquele original que foi 'forkado'(copiado).
+
+**Pull Request** -> é um pedido de inclusão de alterações ao código de uma branch, quando nossas alterações são aceitas na branch principal temos o merge.
+
+**Merge** -> mesclagem do código de uma branch com o código de outra. Exemplo em aula: quando pedimos para incluir nossas alterações - do polvo com oculos e do polvo com chapeu - a branch principal.
+
+_____________
 
 
 ### Passo a passo
@@ -243,3 +283,11 @@ No dia a dia do curso vocês usarão bastante o fluxo de:
 - git commit -m "sua mensagem" -> commita, cria "etiqueta" temporal para sua alteração
 - git push origin sua-branch -> envia para o github
 - git pull origin branch-da-prof -> atualiza
+
+_____________
+
+Observações:
+
+caso seu bash entre no modo editor após puxar alterações - acontece quando aparecem diversas linhas iniciadas com ~ no bash - inserir " :wq " ou clicar na tecla " esc "
+
+se não entender o erro no bash busque no google! sua dúvida com certeza já foi a dúvida de alguém!
