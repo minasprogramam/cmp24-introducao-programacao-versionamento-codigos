@@ -237,9 +237,9 @@ Atualizar seu repositório local com o fork original
 
 
 No dia a dia do curso vocês usarão bastante o fluxo de:
-**clonar, alterar, salvar, commitar, enviar alterações e puxar alterações**
-git clone -> cria cópia local para um repositório
-git add . -> prepara as alterações para commitar
-git commit -m "sua mensagem" -> commita, cria "etiqueta" temporal para sua alteração
-git push origin sua-branch -> envia para o github
-git pull origin branch-da-prof -> atualiza
+**clonar, alterar, salvar, commitar, enviar alterações e puxar alterações/atualizações**
+- git clone -> cria cópia local para um repositório
+- git add . -> prepara as alterações para commitar
+- git commit -m "sua mensagem" -> commita, cria "etiqueta" temporal para sua alteração
+- git push origin sua-branch -> envia para o github
+- git pull origin branch-da-prof -> atualiza
